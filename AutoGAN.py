@@ -9,7 +9,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKe
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 
 # --- CONFIGURATION ---
-TOKEN = '8184247502:AAGvaZ6dwmuyEdb_qMs_BBDmlDiq98U7Y7M'
+TOKEN = '8184247502:AAF2O90M97WQh5xDsDwpL_JH6QXdtTRHT_4'
 ADMIN_ID = 6328650912 
 API_URL = "https://ffgestapisrc.vercel.app/gen"
 CHANNELS = ["@tufan95aura"] 
