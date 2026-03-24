@@ -317,4 +317,17 @@ def main():
     print("Bot is running...")
     app.run_polling()
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    import asyncio
+    
+    # આ લાઈનો ઉમેરો જે લૂપ સેટ કરશે
+    try:
+        loop = asyncio.get_event_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+    try:
+        main()
+    except (KeyboardInterrupt, SystemExit):
+        print("Bot stopped.")
